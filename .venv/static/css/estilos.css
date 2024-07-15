@@ -1,0 +1,19 @@
+.texto{
+    display: flex;
+    align-items: left;
+    justify-content: flex-end;
+}
+
+.header {
+    background-color: var(--jet);
+    padding: .8rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
