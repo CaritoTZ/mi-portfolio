@@ -1,14 +1,6 @@
 from flask import Flask, render_template
 
-"""
-app=Flask(__name__)
-@app.route('/')
-def principal():
-    return "Mi portfolio"
-@app.route('/contacto')
-def contacto():
-    return "Esta es la pagina de contacto"
-"""
+
 app=Flask(__name__)
 @app.route('/')
 def principal():
