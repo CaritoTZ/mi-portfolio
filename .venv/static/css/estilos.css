@@ -8,7 +8,7 @@
     background-color: var(--jet);
     padding: .8rem 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: left;
     position: fixed;
     width: 100%;

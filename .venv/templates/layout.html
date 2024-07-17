@@ -14,25 +14,31 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <div class="texto" class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#">Mi Portfolio</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" aria-current="page" href="/">About me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('mostrarlenguajes')}}">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{{url_for('contacto')}}">Contact</a>
-            </li>
-            </ul>
-        </div>
+
+        
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('mostrarlenguajes')}}">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('proyectos')}}">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('contacto')}}">Contact</a>
+          </li>
+        </ul>
       </div>
+        
+      
     </nav>
   </header>
     <div class="container py-3">
