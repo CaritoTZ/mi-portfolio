@@ -11,9 +11,9 @@ def mostrarlenguajes():
     mislenguajes=("Pyhton", "Java", "C#", "JavaScripts")
     return render_template('lenguajes.html', lenguajes=mislenguajes)
 
-@app.route('/experiencia.html')
+@app.route('/experiencia')
 def experiencia():
-    return render_template('experiencia.html')
+    return render_template('experiencia.html', seccion=experiencia)
 
 @app.route('/proyectos')
 def proyectos():
@@ -22,6 +22,7 @@ def proyectos():
 @app.route('/contacto')
 def contacto():
     return render_template('contacto.html')
+
 
 if __name__ =='_main_':
     app.run(debug=True)
