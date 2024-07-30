@@ -15,14 +15,14 @@
     <header>
       <nav class="flex px-3 text-sm font-semibold rounded-full text-[#0f0c11] dark:text-[#e8e4ea] justify-center items-center" data-astro-cid-3ef6ksr2>
         <div class="container">
-          <a class="navbar-brand" href="#">Mi Portfolio</a>
-  
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-  
+
+          
           
           <ul class="nav justify-content-end">
+            <img src="{{url_for('static', filename='img/perfil.jpg')}}">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">About me</a>
             </li>
@@ -42,9 +42,7 @@
         </div>
       </nav>
   
-      <section id="experiencia" class="seccion" style="display: none;">Contenido de experiencia</section>
-      
-    </header>
+     </header>
       <div class="container py-3">
           {% block body %}
   

@@ -10,8 +10,8 @@ def principal():
 
 @app.route('/skills')
 def skills():
-    mislenguajes=("Pyhton", "Java", "C#", "JavaScripts")
-    return render_template('lenguajes.html', lenguajes=mislenguajes)
+    #mislenguajes=("Pyhton", "Java", "C#", "JavaScripts")
+    return render_template('lenguajes.html')
 
 @app.route('/experiencia')
 def experiencia():

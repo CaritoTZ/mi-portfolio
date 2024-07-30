@@ -3,28 +3,34 @@
 {% block title%} SKILLS {% endblock %}
 
 {% block body%}
-<div class="row">
+<section>
+    <div class="row">
     <div class="col-md-6 offset-md-3">
-        <h1>Skills</h1>
-        <div class="table-responsive">
-            <table class="table table-stripead">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Nombre</th>
-                    </tr>
-                </thead>
-                <body>
-                    {%for leng in lenguajes%}
-                    <tr>
-                        <td>{{loop.index}}</td>
-                        <td>{{leng}}</td>
-                    </tr>
-                    {% endfor %}
-                </body>
-            </table>
+        <h1>Tecnologías</h1>
+        <h4>Sql Server</h4>
+        <!--Sql Server
+            Mysql
+            Sybase
+            SqLite
+
+            Python
+            C#
+            Visual Basic 6.0
+            Transact-Sql
+
+            Css
+            Xml
+            Html
+            Boostrap
+
+            Visual Studio 
+            NetBeans
+            Git
+            GitHub
+        -->
         </div>
     </div>
-</div>
+</section>
+
 
 {% endblock %}
