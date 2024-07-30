@@ -1,3 +1,6 @@
+h1 {
+    color: orange;
+}
 .texto{
     display: flex;
     align-items: left;
