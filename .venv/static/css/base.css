@@ -1,0 +1,341 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/fondo.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 110vh;
+    overflow-y: scroll;  /*Fuerza el scroll vertical */
+}
+
+
+/*Sobre Mi*/
+.about-container {
+    text-align: center;
+}
+
+.about-title {
+    padding: 0 15px;
+    font-size: 1.1rem; /* Ajusta el tamaño para pantallas más pequeñas */
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(90deg, red, violet);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-description {
+    padding: 0 15px;
+    font-size: 1.1rem; /* Ajusta el tamaño para pantallas más pequeñas */
+    margin-top: 20px;
+    line-height: 1.6;
+    animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.btn-link {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 5px 15px;
+    font-size: 1.1rem; /* Ajusta el tamaño para pantallas más pequeñas */
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient(90deg, #ff6b6b, #7d5fff);
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.btn-link:hover {
+    transform: scale(1.1);
+}
+
+/*cursor sobre los iconos*/
+.skill-icon:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    background-color: #282828;
+    border-radius: 50%;
+  }
+  
+  .tooltip {
+    display: none;
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  
+ .skill-icon:hover .tooltip {
+    display: block;
+  }
+/*transicion suave*/  
+.skill-icon {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/*alineación*/  
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .skill-category h3{
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .skill-category .p{
+    font-size: 1.2rem;
+    text-align: 5rem;
+  }
+  
+  .skill-icon .img{
+    width: 40%;
+    margin: 0 auto;
+  }
+/*degradado  */
+.skill-section h2{
+    text-align: center;
+    padding: 10px;
+    background-color: #000;
+}
+   
+/*Animación con JavaScript y CSS*/
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+/* Sección de experiencia */
+/* Contenedor general de la sección */
+.experiencia-section {
+    position: relative;
+    padding: 10px;
+    background-color: #000;
+    color: white;
+    height: 0vh; 
+    overflow-y: auto; /* Permite scroll vertical */
+}
+
+/* Título fijo al hacer scroll */
+h1 {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #000; /* Fondo negro para mantener contraste */
+    color: white;
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+/* Separación entre experiencias */
+.experiencia-item {
+    margin-bottom: 30px;
+    padding: 10px;
+    border-left: 4px solid orange; /* Línea decorativa opcional */
+}
+
+/* Títulos de las experiencias */
+/* Lista de roles */
+.experience-item .li {
+    background-color: #1a1a1a;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.experience-item .li:hover {
+    background-color: #333333;
+    transform: scale(1.05);
+}
+
+/* Títulos de los roles */
+.experience-item h2 {
+    position: sticky; /* 'fixed' si quiero que siempre esté visible */
+    top: 0; /* Espacio desde la parte superior de la pantalla */
+    background-color: #000; /* Fondo para que sea legible */
+    z-index: 100; /* Asegura que esté encima de otros elementos */
+    padding: 10px; /* Opcional: Añade espacio interno */
+    color: #6f00ff;
+    font-size: 28px;
+    margin: 0;
+}
+/* Fechas */
+.experience-item .date {
+    font-style: italic;
+    color: #cccccc;
+    margin-bottom: 0.5rem;
+}
+
+/* Responsabilidades y tecnologías */
+.experience-item .ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    margin-bottom: 40px; /* Separación entre cada experiencia */
+    color: #e6e6e6;
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Descripción del rol */
+#experience li .p {
+    color: #ccc;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+/* Asegúrate de que estas reglas estén en el archivo CSS vinculado a tu plantilla */
+.technologies img {
+    width: 40px; /* Ajusta el tamaño según lo que prefieras */
+    height: auto; /* Mantiene la proporción */
+    margin: 5px; /* Espaciado entre íconos */
+    display: inline-block; /* Asegura que los íconos estén alineados horizontalmente */
+}
+
+/* Tecnologías utilizadas */
+.experience li .technologies {
+    display: flex;
+    gap: 20px;  /* Espacio entre cada icono */
+    align-items: center; /* Alinear verticalmente con el texto */
+    margin-top: 15px;
+}
+
+#experience li .technologies img {
+    width: 10px;
+    height: 10px;
+}
+
+/* Espaciado entre las tecnologías */
+#experience li .technologies span {
+    color: #f4f4f4;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/*foto de perfil*/
+img{
+    max-width: 100px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.texto{
+    display: flex;
+    align-items: left;
+    justify-content: flex-end;
+}
+
+/*Estilos para el menu navegacion*/
+.navbar {
+    display: flow-root;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #f9f9f9;*/
+    padding: 20px;
+    height: 100%;
+    width: 15%;
+    background-image: url('../img/fondo-degradado.jpg'); /* Ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Icono del menú hamburguesa */
+.icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+/* Estilos para los enlaces del menú */
+.menu-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    justify-content: center;
+}
+
+.menu-links a:hover {
+    background-color: #555;
+    color: white;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Ocultar el checkbox */
+#menu-toggle {
+    display: none;
+}
+/*fin*/
+
+
+/* Mostrar el menú al hacer clic en el ícono */
+.navbar.active .menu-links {
+    display: flex;
+}
+
+/* Ocultar el menú en pantallas pequeñas y mostrar solo el icono */
+@media (max-width: 768px) {
+    .menu-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #333;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        z-index: 1000;
+    }
+
+    
+    /* Mostrar el icono del menú hamburguesa */
+    .icon {
+        display: block;
+    }
+
+    /* Mostrar el menú cuando se selecciona el checkbox */
+    #menu-toggle:checked + .icon + .menu-links {
+        display: flex;
+    }
+}
+
+
+
+
+

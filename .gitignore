@@ -1,3 +1,19 @@
 themes.txt
 bosquejo.png
 bosquejo2.png
+.codegpt
+Python_Flask.py
+/*moverFondo
+@keyframes moverFondo {
+    from {
+        background-position: 0% 50%;
+    }
+    to {
+        background-position: 100% 50%;
+    }
+}
+
+.navbar {
+    animation: moverFondo 9s linear infinite alternate;
+}*/
+

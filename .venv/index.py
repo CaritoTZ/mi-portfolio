@@ -10,7 +10,6 @@ def principal():
 
 @app.route('/skills')
 def skills():
-    #mislenguajes=("Pyhton", "Java", "C#", "JavaScripts")
     return render_template('lenguajes.html')
 
 @app.route('/experiencia')
@@ -19,7 +18,21 @@ def experiencia():
 
 @app.route('/proyectos')
 def proyectos():
-    return render_template('proyectos.html')
+    projects = [
+        {
+            'title': 'Sistema de Control de Horas',
+            'description': 'Aplicación para el control y gestión de horas trabajadas.',
+            'image': 'fondo.jpg',
+            'link': 'https://github.com/usuario/proyecto'
+        },
+        {
+            'title': 'Aplicación Móvil',
+            'description': 'En desarrollo',
+            'image': 'fondo.jpg',
+            'link': 'https://github.com/usuario/proyecto'
+        }
+    ]
+    return render_template('proyectos.html', projects=projects)
 
 @app.route('/contacto')
 def contacto():
