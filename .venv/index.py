@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 
 app=Flask(__name__)
-@app.route('/')
+@app.route('/mi-portfolio')
 def principal():
     title = "Mi Portfolio"
     return render_template('index.html', title=title)
@@ -23,7 +23,7 @@ def proyectos():
             'title': 'Sistema de Control de Horas',
             'description': 'Aplicación para el control y gestión de horas trabajadas.',
             'image': 'fondo.jpg',
-            'link': 'https://github.com/usuario/proyecto'
+            'link': 'https://github.com/CaritoTZ/mi-portfolio'
         },
         {
             'title': 'Aplicación Móvil',
