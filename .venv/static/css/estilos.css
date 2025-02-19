@@ -1,0 +1,25 @@
+.texto{
+    display: flex;
+    align-items: left;
+    justify-content: flex-end;
+}
+
+.header {
+    background-color: var(--jet);
+    padding: .8rem 3rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+nav[data-astro-cid-3ef6ksr2] {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px
+}
