@@ -2,7 +2,7 @@ from flask import Flask, render_template
 
 
 app=Flask(__name__)
-@app.route('/mi-portfolio')
+@app.route('/')
 def principal():
     title = "Mi Portfolio"
     return render_template('index.html', title=title)
