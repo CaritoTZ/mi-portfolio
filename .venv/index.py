@@ -21,10 +21,11 @@ def proyectos():
     projects = [
         {
             'title': 'Sistema de Control de Horas',
-            'description': 'Aplicación para el control y gestión de horas trabajadas.',
+            "description": "Aplicación para el control y gestión de horas trabajadas.",
             'image': 'fondo.jpg',
             'link': 'https://github.com/CaritoTZ/Cronos360',
             "images": [
+            "img_portfolio/logomin.jpeg",
             "img_portfolio/HomeIngreso.png",
             "img_portfolio/CargaExcel.png",
             "img_portfolio/CargaHoras.png"

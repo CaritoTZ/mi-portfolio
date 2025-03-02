@@ -13,9 +13,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 110vh;
-    overflow-y: scroll;  /*Fuerza el scroll vertical */
+    overflow-y: scroll;  
 }
-
 
 /*Sobre Mi*/
 .about-container {
@@ -24,7 +23,8 @@ body {
 
 .about-title {
     padding: 0 15px;
-    font-size: 1.1rem; /* Ajusta el tamaño para pantallas más pequeñas */
+    /* Ajusta el tamaño para pantallas más pequeñas */
+    font-size: 1.1rem; 
     font-size: 3rem;
     font-weight: 700;
     background: linear-gradient(90deg, red, violet);
@@ -35,7 +35,8 @@ body {
 
 .about-description {
     padding: 0 15px;
-    font-size: 1.1rem; /* Ajusta el tamaño para pantallas más pequeñas */
+    /* Ajusta el tamaño para pantallas más pequeñas */
+    font-size: 1.1rem; 
     margin-top: 20px;
     line-height: 1.6;
     animation: fadeIn 3s ease-in-out;
@@ -50,7 +51,8 @@ body {
     display: inline-block;
     margin-top: 30px;
     padding: 5px 15px;
-    font-size: 1.1rem; /* Ajusta el tamaño para pantallas más pequeñas */
+    /* Ajusta el tamaño para pantallas más pequeñas */
+    font-size: 1.1rem; 
     color: #fff;
     text-decoration: none;
     background: linear-gradient(90deg, #ff6b6b, #7d5fff);
@@ -147,7 +149,8 @@ body {
     background-color: #000;
     color: white;
     height: 0vh; 
-    overflow-y: auto; /* Permite scroll vertical */
+    /* Permite scroll vertical */
+    overflow-y: auto; 
 }
 
 /* Título fijo al hacer scroll */
@@ -155,10 +158,10 @@ h1 {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #000; /* Fondo negro para mantener contraste */
+    background-color: #000; 
     color: white;
     font-size: 2rem;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     
 }
@@ -167,7 +170,8 @@ h1 {
 .experiencia-item {
     margin-bottom: 30px;
     padding: 10px;
-    border-left: 4px solid orange; /* Línea decorativa opcional */
+    /* Línea decorativa */
+    border-left: 4px solid orange; 
 }
 
 /* Títulos de las experiencias */
@@ -187,11 +191,11 @@ h1 {
 
 /* Títulos de los roles */
 .experience-item h2 {
-    position: sticky; /* 'fixed' si quiero que siempre esté visible */
-    top: 0; /* Espacio desde la parte superior de la pantalla */
-    background-color: #000; /* Fondo para que sea legible */
-    z-index: 100; /* Asegura que esté encima de otros elementos */
-    padding: 10px; /* Opcional: Añade espacio interno */
+    position: sticky; 
+    top: 0; 
+    background-color: #000; 
+    z-index: 100; 
+    padding: 10px; 
     color: #6f00ff;
     font-size: 28px;
     margin: 0;
@@ -207,7 +211,7 @@ h1 {
 .experience-item .ul {
     list-style: disc;
     margin-left: 1.5rem;
-    margin-bottom: 40px; /* Separación entre cada experiencia */
+    margin-bottom: 40px; 
     color: #e6e6e6;
     list-style-type: none;
     padding: 0;
@@ -225,14 +229,15 @@ h1 {
     width: 40px; 
     height: auto;
     margin: 5px; 
-    display: inline-block; /* Asegura que los íconos estén alineados horizontalmente */
+    display: inline-block; 
 }
 
 /* Tecnologías utilizadas */
 .experience li .technologies {
     display: flex;
-    gap: 20px;  /* Espacio entre cada icono */
-    align-items: center; /* Alinear verticalmente con el texto */
+    /* Espacio entre cada icono */
+    gap: 20px;  
+    align-items: center; 
     margin-top: 15px;
 }
 
@@ -266,7 +271,6 @@ img{
     display: flow-root;
     justify-content: space-between;
     align-items: center;
-    /*background-color: #f9f9f9;*/
     padding: 20px;
     height: 100%;
     width: 15%;
@@ -341,8 +345,9 @@ img{
     justify-content: center;
     padding: 10px 15px;
     font-size: 16px;
-    min-width: 200px;  /* Ajusta el ancho mínimo para que todos sean iguales */
-    height: 50px;  /* Asegura que la altura sea la misma */
+    /* Ajusto el ancho mínimo para que todos sean iguales */
+    min-width: 200px;  
+    height: 50px;  
   }
   
   .gallery {
